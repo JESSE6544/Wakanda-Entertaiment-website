@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events & Bookings | Wakanda Entertainment</title>
+    <link rel="stylesheet" href="css/events.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">WAKANDA ENTERTAINMENT</div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="artist.html">Artist</a></li>
+                    <li><a href="music.html">Music & Videos</a></li>
+                    <li><a href="events.html" class="active">Events & Bookings</a></li>
+                    <li><a href="donate.html">Donate & Impact</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" style="background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?ixlib=rb-1.2.1&auto=format&fit=crop&w=1350&q=80');">
+        <div class="container">
+            <h1>EVENTS & BOOKINGS</h1>
+            <div class="hero-tagline">Bookings Open Year-Round</div>
+            <p class="hero-description">
+                Book Rody Gavana for your event. Professional entertainment for concerts, festivals, corporate shows, and more.
+            </p>
+            <a href="#booking" class="cta-button">Submit Booking Request</a>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Available For</h2>
+            <div class="three-columns">
+                <div class="column">
+                    <i class="fas fa-music fa-3x text-gold mb-2"></i>
+                    <h3>Concerts & Festivals</h3>
+                    <p>Main stage performances and festival appearances</p>
+                </div>
+                <div class="column">
+                    <i class="fas fa-briefcase fa-3x text-gold mb-2"></i>
+                    <h3>Corporate Shows</h3>
+                    <p>Company events, product launches, and brand activations</p>
+                </div>
+                <div class="column">
+                    <i class="fas fa-handshake fa-3x text-gold mb-2"></i>
+                    <h3>Brand Endorsements</h3>
+                    <p>Partnerships and brand representation</p>
+                </div>
+            </div>
+            
+            <div class="three-columns mt-2">
+                <div class="column">
+                    <i class="fas fa-university fa-3x text-gold mb-2"></i>
+                    <h3>University Tours</h3>
+                    <p>Campus events and student performances</p>
+                </div>
+                <div class="column">
+                    <i class="fas fa-heart fa-3x text-gold mb-2"></i>
+                    <h3>Charity Performances</h3>
+                    <p>Benefit concerts and community events</p>
+                </div>
+                <div class="column">
+                    <i class="fas fa-calendar-alt fa-3x text-gold mb-2"></i>
+                    <h3>Private Events</h3>
+                    <p>Weddings, birthdays, and special occasions</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section bg-dark" id="booking">
+        <div class="container">
+            <h2 class="section-title text-gold">Booking Request Form</h2>
+            <p class="text-center mb-2">Please provide details about your event for a prompt response.</p>
+            
+            <div class="booking-form" style="max-width: 800px; margin: 0 auto; background: white; padding: 2rem; border-radius: 8px;">
+                <form>
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                        <div>
+                            <label for="name">Full Name *</label>
+                            <input type="text" id="name" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <label for="email">Email Address *</label>
+                            <input type="email" id="email" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="phone">Phone Number *</label>
+                        <input type="tel" id="phone" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="event-type">Event Type *</label>
+                        <select id="event-type" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                            <option value="">Select event type</option>
+                            <option value="concert">Concert / Festival</option>
+                            <option value="corporate">Corporate Event</option>
+                            <option value="university">University Tour</option>
+                            <option value="charity">Charity Performance</option>
+                            <option value="private">Private Event</option>
+                            <option value="endorsement">Brand Endorsement</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+                    
+                    <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
+                        <div>
+                            <label for="date">Proposed Date *</label>
+                            <input type="date" id="date" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                        <div>
+                            <label for="venue">Venue / Location *</label>
+                            <input type="text" id="venue" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                        </div>
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="budget">Estimated Budget (Optional)</label>
+                        <input type="text" id="budget" placeholder="UGX" style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;">
+                    </div>
+                    
+                    <div style="margin-bottom: 1rem;">
+                        <label for="message">Event Details *</label>
+                        <textarea id="message" rows="5" required style="width: 100%; padding: 0.8rem; border: 1px solid #ddd; border-radius: 4px;" placeholder="Please describe your event, expected audience, special requirements, etc."></textarea>
+                    </div>
+                    
+                    <button type="submit" class="cta-button" style="width: 100%;">Submit Booking Request</button>
+                </form>
+            </div>
+            
+            <div class="text-center mt-3">
+                <p>Or contact us directly: <strong>+256 7XX XXX XXX</strong> | <strong>bookings@wakandaent.com</strong></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+            <h2 class="section-title">Confirmed Events</h2>
+            
+            <div class="event-card">
+                <h3 class="event-title">Friends of Rody Gavana – Soroti Edition 2025</h3>
+                <p><strong>Venue:</strong> Cloud 9 • Soroti, Uganda</p>
+                <p><strong>Date:</strong> 27th December 2025</p>
+                <p><strong>Time:</strong> 6:00 PM Onwards</p>
+                <p><strong>Description:</strong> Annual charity concert featuring Rody Gavana with special guests. Proceeds support the IBAS Classroom Project.</p>
+                
+                <div class="action-buttons mt-2">
+                    <a href="#" class="btn-small btn-download">Buy Tickets</a>
+                    <a href="#" class="btn-small" style="background-color: #1a1a1a; color: white;">Sponsorship Info</a>
+                    <a href="donate.html" class="btn-small btn-stream">Donate to Cause</a>
+                </div>
+            </div>
+            
+            <div class="text-center mt-3">
+                <p>More events will be announced soon. Follow us on social media for updates.</p>
+                <a href="index.html" class="cta-button">Back to Home</a>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Bookings & Management</h3>
+                    <p>+256 7XX XXX XXX</p>
+                    <p>bookings@wakandaent.com</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Business Hours</h3>
+                    <p>Mon - Fri: 9:00 AM - 6:00 PM</p>
+                    <p>Sat: 10:00 AM - 4:00 PM</p>
+                    <p>Sun: Closed</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Response</h3>
+                    <p>We typically respond to booking inquiries within 24-48 hours.</p>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Wakanda Entertainment. Professional booking management.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+<script src="js/events.js"></script>
+</html>
