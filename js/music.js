@@ -93,3 +93,21 @@ window.addEventListener('resize', () => {
         document.querySelector('.nav-links').style.position = 'static';
     }
 });
+
+// Hide/Show navigation on scroll
+let lastScrollTop = 0;
+const header = document.querySelector('header');
+
+window.addEventListener('scroll', () => {
+    const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+    
+    if (scrollTop > lastScrollTop && scrollTop > 100) {
+        // Scrolling down - hide header
+        header.style.transform = 'translateY(-100%)';
+    } else {
+        // Scrolling up - show header
+        header.style.transform = 'translateY(0)';
+    }
+    
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+});

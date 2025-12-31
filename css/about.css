@@ -12,6 +12,7 @@ body {
     line-height: 1.6;
     color: #000000;
     background-color: #FFFFFF;
+    padding-top: 80px; /* Account for fixed header */
 }
 
 .container {
@@ -26,16 +27,35 @@ header {
     background-color: #FFDAB9;
     color: #000000;
     padding: 1rem 0;
-    position: sticky;
+    position: fixed;
     top: 0;
+    left: 0;
+    right: 0;
     z-index: 1000;
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 .logo {
-    font-size: 1.8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 1;
+}
+
+.logo-top, .logo-bottom {
+    font-size: 1.08rem; /* 40% reduction from 1.8rem */
     font-weight: bold;
     color: #000000;
+}
+
+.logo-link {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.logo-link:hover {
+    transform: scale(1.05);
 }
 
 nav {
